@@ -1,0 +1,30 @@
+.navbar
+    &__text_right:hover
+        color: rgba(209, 86, 15, 0.719)
+    &__logo:hover
+        animation: bounce 1s
+    &__icon_girl:hover
+        transform: scale(1.1)
+.hero
+    &__form_host-contact:hover, &__form_list_show-all-amenities:hover
+        color: rgba(209, 86, 15, 0.719)
+    &__form_button-book:hover, &__hosted_button_contact_host:hover
+        cursor: pointer
+        animation: bounce 1s
+    &__reviews_logo_man:hover
+        cursor: pointer
+        transform: scale(1.04)
+.footer
+    &__content_FAQ:hover
+        color: rgba(209, 86, 15, 0.719)
+
+@keyframes bounce 
+	0%, 20%, 60%, 100% 
+		-webkit-transform: translateY(0)
+		transform: translateY(0)
+	40% 
+		-webkit-transform: translateY(-8px)
+		transform: translateY(-8px)
+	80%
+		-webkit-transform: translateY(-4px)
+		transform: translateY(-4px)
