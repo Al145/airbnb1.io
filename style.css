@@ -36,8 +36,8 @@
 
 .navbar__icon_girl {
   margin-right: 20px;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .navbar__text_right {
@@ -45,8 +45,8 @@
   text-decoration: none;
   font-weight: 600;
   opacity: 0.9;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .navbar__inform {
@@ -139,11 +139,9 @@
 }
 
 .hero__form_host-contact {
-  font-weight: 600;
-  margin-bottom: 55px;
-  margin-top: -20px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  font-weight: 700;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .hero__form_host-contact-link {
@@ -188,8 +186,8 @@
   font-weight: 600;
   line-height: 2.5;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .hero__reviews_text {
@@ -223,8 +221,8 @@
   width: 50px;
   height: 50px;
   margin-right: 15px;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .hero__reviews_feedback_descr {
@@ -255,6 +253,8 @@
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 75px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .footer__content {
@@ -297,12 +297,20 @@
 
 .footer__content_FAQ {
   line-height: 0.4;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
 }
 
 .footer__content_FAQ_link {
   text-decoration: none;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.footer__content_airbnb {
+  font-weight: 700;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 .navbar__text_right:hover {
@@ -323,10 +331,17 @@
   color: rgba(209, 86, 15, 0.719);
 }
 
-.hero__form_button-book:hover, .hero__hosted_button_contact_host:hover {
+.hero__hosted_button_contact_host:hover {
   cursor: pointer;
-  -webkit-animation: bounce 1s;
-          animation: bounce 1s;
+  background: #118487;
+  color: #fff;
+}
+
+.hero__hosted_button_contact_host:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: .1s ease-out;
+  transition: .1s ease-out;
 }
 
 .hero__reviews_logo_man:hover {
@@ -335,7 +350,27 @@
           transform: scale(1.04);
 }
 
+.form__form_button-book:hover {
+  cursor: pointer;
+  color: #fd5c62;
+  background: #FFF;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.form__form_button-book:active {
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
+  -webkit-transition: linear;
+  transition: linear;
+}
+
 .footer__content_FAQ:hover {
+  color: rgba(209, 86, 15, 0.719);
+}
+
+.footer__content_airbnb:hover {
+  cursor: pointer;
   color: rgba(209, 86, 15, 0.719);
 }
 
@@ -367,5 +402,55 @@
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
   }
+}
+
+.form__form {
+  position: absolute;
+  top: 71%;
+  left: 62%;
+  height: 330px;
+  width: 319px;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  margin-top: 18px;
+}
+
+.form__form_cost {
+  position: absolute;
+  margin: 30px;
+}
+
+.form__form_date {
+  position: absolute;
+  margin: 91px 30px 30px;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  height: 50px;
+  width: 258px;
+  padding-left: 17px;
+}
+
+.form__form_guests {
+  position: absolute;
+  margin: 157px 30px 30px;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  height: 50px;
+  width: 258px;
+  padding-left: 17px;
+}
+
+.form__form_button-book {
+  position: absolute;
+  margin: 231px 30px 30px;
+  background: #FD5C63;
+  border-radius: 4px;
+  height: 50px;
+  width: 258px;
+  outline: none;
+  border: 1px solid #FD5C63;
+  color: #FFF;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
 }
 /*# sourceMappingURL=style.css.map */

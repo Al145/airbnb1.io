@@ -8,15 +8,36 @@
 .hero
     &__form_host-contact:hover, &__form_list_show-all-amenities:hover
         color: rgba(209, 86, 15, 0.719)
-    &__form_button-book:hover, &__hosted_button_contact_host:hover
+    &__hosted_button_contact_host:hover
         cursor: pointer
-        animation: bounce 1s
+        // animation: bounce 1s
+        background: rgb(17, 132, 135)
+        color: #fff
+        
+    &__hosted_button_contact_host:active
+        transform: scale(0.98)
+        transition: .1s ease-out
     &__reviews_logo_man:hover
         cursor: pointer
         transform: scale(1.04)
+.form
+    &__form_button-book:hover
+        cursor: pointer
+        // animation: bounce 1s
+        color: rgb(253, 92, 98)
+        background: #FFF
+        transform: scale(.95)
+    &__form_button-book:active
+        transform: scale(.92)
+        transition: linear
+
 .footer
     &__content_FAQ:hover
         color: rgba(209, 86, 15, 0.719)
+    &__content_airbnb:hover
+        cursor: pointer
+        color: rgba(209, 86, 15, 0.719)
+
 
 @keyframes bounce 
 	0%, 20%, 60%, 100% 
